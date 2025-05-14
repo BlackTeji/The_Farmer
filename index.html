@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DeltaFresh Orders</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">DeltaFresh<span class="highlight">Orders</span></div>
+        <p class="tagline">From Farm to You — Fresh, Fast, Reliable</p>
+    </header>
+
+    <div class="container">
+        <h2>Place Your Order</h2>
+
+        <form id="orderForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" required />
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" required />
+
+            <label>Select Crops & Quantities (Kg)</label>
+            <div id="cropInputs"></div>
+
+            <label for="location">Delivery location</label>
+            <select id="location" required></select>
+
+            <div class="price-output" id="priceDetails">Total: ₦0</div>
+
+            <button type="submit">Place Order</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 DeltaFresh. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
